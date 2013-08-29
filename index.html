@@ -56,8 +56,9 @@
         line-height: 30px;
       }
       p {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 12px;
+        text-align: left;
       }
 
       /* Video pitch and Action */
@@ -73,6 +74,10 @@
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
+      }
+      .mybox {
+        text-align: center;
+        border: 2px solid;
       }
       .statistics h3, .statistics p {
         color: white;
@@ -101,6 +106,9 @@
       div.addthis_toolbox {
         width:180px;
         margin: 0 auto;
+      }
+      body {
+        background-color: #CCC;
       }
     </style>
   </head>
@@ -143,16 +151,20 @@
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
           <p class="lead">Scientists Bringing Data Science into High School Classrooms</p>
         </div>
       </div>
+      <div id='content' class='row-fluid'>
+         <div class="span6 mybox">
+           <h2>Background</h2>
+           <p>Education, Education, Education! </p>
+           <p>Guess What -- More -- Education, Education, Education! </p>
+         </div>
+         <div class='span6 mybox'>
+           <h2>Opportunity</h2>
+         </div>
+   </div>
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
           <div class="span8 offset2">
